@@ -1,0 +1,45 @@
+<div style="padding-top: 50px">
+    <ul class="policy-list">
+        <li data-path="policydetail">
+            <p class="onerow-overflow">关于做好2019年国际SOS儿童村日和“开放日”活动的通知</p>
+            <span>2019-06-05</span>
+        </li>
+        <li>
+            <p class="onerow-overflow">关于请告知第一批旁听社会工作本科课程的SOS妈妈到山东工商学院插班的通知</p>
+            <span>2019-06-05</span>
+        </li>
+        <li>
+            <p class="onerow-overflow">关于印发中国SoS儿童村妈妈阿姨教育培训提档升级三年规划暨实施方案意见的通知</p>
+            <span>2019-06-05</span>
+        </li>
+        <li>
+            <p class="onerow-overflow">关于印发全国SOS儿童村党建经验交流会经验交流材料的通知</p>
+            <span>2019-06-05</span>
+        </li>
+        <li>
+            <p class="onerow-overflow">关于授予SOS儿童村家庭妈妈张素芳等52人终身奉献者证书的决定</p>
+            <span>2019-06-05</span>
+        </li>
+        <li>
+            <p class="onerow-overflow">关于召开全国SOS儿童村党建经验交流会并向服务超过21年的妈妈颁发“终身奉献者”证书仪式的通知</p>
+            <span>2019-06-05</span>
+        </li>
+        <li>
+            <p class="onerow-overflow">印发《关于进一步加强和规范非编人员管理的若干意见》的通知</p>
+            <span>2019-06-05</span>
+        </li>
+        <li>
+            <p class="onerow-overflow">关于山东工商学院公共管理学院院长于秀琴任中国SOS儿童村协会孤儿抚育培养专业委员会总干事暨组</p>
+            <span>2019-06-05</span>
+        </li>
+    </ul>
+</div>
+<script>
+$(function(){
+    $(".policy-list>li").click(function(){
+        let hashStr = window.location.hash.substring(1), 
+            htmlName = $(this).attr('data-path');
+        $('.right-content').load("./static/page/"+hashStr+"/"+htmlName+".html");
+    })
+})
+</script>

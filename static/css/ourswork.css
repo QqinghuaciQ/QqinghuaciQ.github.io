@@ -1,0 +1,212 @@
+.column-title{
+    height: 102px;
+    line-height: 102px;
+    font-size: 36px;
+    color: #00b5f3;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.family-care .care-box{
+    width: 100%;
+    height: 585px;
+    position: relative;
+}
+.family-care .care-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.care-box .care-btn{
+    position: absolute;
+    left: 20px;
+    bottom: 200px;
+    width: 234px;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    background-color: #00b5f3;
+    border-bottom: 3px solid #3090b8;
+    font-size: 28px;
+    border-radius: 6px;
+}
+.care-box .care-btn a{color: #FFF}
+.care-box .more-text {
+    position: relative;
+    left: 28px;
+    letter-spacing: 2px;
+    transition: left 0.5s;
+}
+.care-box .more-arrow{
+    opacity: 0;
+    position: relative;
+    left: 0;
+    transition: all 0.5s;
+}
+.care-box>div:hover .more-arrow{
+    opacity: 1;
+    left: 10px;
+}
+.care-box>div:hover .more-text{left: 0;}
+.care-box>p{
+    position: absolute;
+    left: 20px;
+    bottom: 85px;
+    width: 980px;
+    line-height: 45px;
+    font-size: 28px;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.family-list .care-list{
+    width: 1250px;
+    margin: 0 auto;
+    padding: 40px 25px 25px 25px;
+    overflow: hidden;
+}
+.care-list>li{
+    width: 378px;
+    margin-right: 33px;
+}
+.care-list>li:last-child{margin-right: 0}
+.care-list>li .care-img{
+    width: 100%;
+    height: 284px;
+}
+.care-list>li .care-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.care-list>li .care-content{
+    width: 100%;
+    height: 165px;
+    padding: 30px 42px;
+    border: 1px solid #EEE;
+    border-top: none;
+}
+.care-list>li:hover{box-shadow: 0 5px 20px -2px rgba(0,0,0,.2)}
+.care-content .care-title{font-size: 24px;}
+.care-content .care-synopsis{
+    margin-top: 17px;
+    color: #666;
+    line-height: 26px;
+}
+
+.education-list{padding-bottom: 20px}
+.education-list>li{
+    overflow: hidden;
+    padding: 38px 0;
+    border-bottom: 1px dashed #d6d6d6;
+}
+.education-list>li:first-child{padding-top: 0}
+.education-list>li:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.education-list .education-img{
+    width: 600px;
+    height: 300px;
+}
+.education-list .education-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.education-list>li:nth-child(2n+1) .education-content{
+    margin-left: 600px;
+    padding-left: 25px;
+    transition: all 0.5s;
+}
+.education-list>li:nth-child(2n) .education-content{
+    margin-right: 600px;
+    padding-right: 25px;
+    transition: all 0.5s;
+}
+.education-list>li:nth-child(2n) .education-title{text-align: right;}
+.education-list>li:nth-child(2n) .education-btn{float: right}
+.education-list>li:nth-child(2n+1):hover .education-content{padding-left: 50px}
+.education-list>li:nth-child(2n):hover .education-content{padding-right: 50px}
+.education-title{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.education-synopsis{
+    color: #666;
+    line-height: 25px;
+    margin: 16px 0 15px 0;
+    height: 100px;
+}
+.education-btn{
+    width: 163px;
+    height: 43px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00b5f3;
+    border-bottom: 3px solid #3090b8;
+    font-size: 22px;
+    border-radius: 6px;
+}
+.education-btn a{color: #FFF}
+.education-btn .more-text {
+    position: relative;
+    left: 21px;
+    letter-spacing: 2px;
+    transition: left 0.5s;
+}
+.education-btn .more-arrow{
+    opacity: 0;
+    position: relative;
+    left: 0;
+    transition: all 0.5s;
+}
+.education-btn:hover .more-arrow{opacity: 1;}
+.education-btn:hover .more-text{left: 0;}
+
+.child-difficult{padding-bottom: 20px;}
+.child-difficult:hover .difficult-title span{color: #00b5f3}
+.difficult-list{overflow: hidden;}
+.difficult-list>li{
+    width: 398px;
+    height: 300px;
+    margin-right: 3px;
+}
+.difficult-list>li:last-child{margin-right: 0}
+.difficult-list>li>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.difficult-content{
+    height: 150px;
+    padding: 15px 16px;
+    border: 1px solid #EEE;
+    border-top: none;
+}
+.difficult-content .difficult-title{font-size: 24px;}
+.difficult-title span{color: #666}
+.difficult-content .difficult-synopsis{
+    color: #666;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.vocational-training{padding-bottom: 120px}
+.vocational-training .training-img{
+    width: 100%;
+    height: 300px;
+}
+.training-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.training-title{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 14px;
+    text-align: center;
+    letter-spacing: 4px;
+}

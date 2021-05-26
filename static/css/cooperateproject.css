@@ -1,0 +1,101 @@
+.cooperate-wrap{padding-bottom: 80px}
+.enterprise-box{
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+.enterprise-box>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.enterprise-btn{
+    position: absolute;
+    left: 50px;
+    bottom: 120px;
+    width: 180px;
+    height: 54px;
+    line-height: 52px;
+    border-bottom: 3px solid #3090b8;
+    border-radius: 6px;
+    color: #FFF;
+    font-size: 33px;
+    background-color: #42c0f5;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+.enterprise-btn:hover{
+    left: 30px;
+    width: 220px;
+}
+.enterprise-title{
+    position: relative;
+    left: 24px; 
+    transition: all 0.3s;
+}
+.enterprise-btn:hover .enterprise-title{left: 15px}
+.enterprise-arrow{
+    position: absolute;
+    top: 1px;
+    right: 50px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.enterprise-btn:hover .enterprise-arrow{
+    opacity: 1;
+    right: 10px;
+}
+.cooperate-content{overflow: hidden;}
+.cooperate-content>.part-left{width: 50%;}
+.cooperate-content .cooperate-right{margin-left: 636px;}
+.cooperate-box{padding-left: 22px}
+.cooperate-box>p:first-child{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 30px 0 20px 0;
+}
+.cooperate-box>p{line-height: 26px;}
+.cooperate-content>.part-left>img{
+    max-width: 100%;
+    margin-top: 32px;
+}
+.cooperate-info{padding: 25px 0;}
+.cooperate-info>p{
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cooperate-right .cooperate-box{padding-left: 0}
+.cooperate-right .cooperate-box>p:last-child{color: #666}
+
+.cooperate-right>.more-btn{
+    width: 164px;
+    height: 43px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 3px solid #3090b8;
+    border-radius: 6px;
+    color: #FFF;
+    font-size: 24px;
+    background-color: #42c0f5;
+    cursor: pointer;
+    margin-top: 32px;
+}
+.cooperate-right>.more-btn .more-title{
+    position: relative;
+    left: 20px;
+    transition: left 0.3s;
+}
+.cooperate-right>.more-btn .more-arrow{
+    position: relative;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.cooperate-right>.more-btn:hover .more-title{left: -1px}
+.cooperate-right>.more-btn:hover .more-arrow{
+    left: 3px;
+    opacity: 1;
+
+}

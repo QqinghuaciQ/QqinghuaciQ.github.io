@@ -1,0 +1,41 @@
+<style type="text/css">
+    .current-location{
+        color: #00b5f3;
+        padding: 22px 0 30px 0;
+    }
+    .fulltime-list>li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .fulltime-list>li>p{
+        margin-left: 10px;
+    }
+    .fulltime-list>li>p:hover{color: #00b5f3;}
+</style>
+<div class="current-location"><span>招聘信息</span><span> > 全职、兼职招聘</span></div>
+<ul class="fulltime-list">
+    <li data-path="semextend">
+        <img src="static/images/list_arrow.jpg"/>
+        <p>SEM推广经理</p>
+    </li>
+    <li>
+        <img src="static/images/list_arrow.jpg"/>
+        <p>地推经理</p>
+    </li>
+    <li>
+        <img src="static/images/list_arrow.jpg"/>
+        <p>助养项目助理</p>
+    </li>
+</ul>
+<script>
+$(function(){
+    $(".fulltime-list>li").click(function(){
+        let hashStr = window.location.hash.substring(1), 
+            htmlName = $(this).attr('data-path');
+        $('.right-content').load("./static/page/"+hashStr+"/"+htmlName+".html");
+    })
+})
+</script>

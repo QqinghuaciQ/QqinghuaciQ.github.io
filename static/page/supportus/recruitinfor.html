@@ -1,0 +1,21 @@
+<div class="recruit-infor">
+    <div class="recruit-box">
+        <div data-path="fulltime" class="recruit-entry part-left">
+            <p>全职、兼职招募</p>
+            <p><span class="entry-text">入口</span><span class="entry-arrow">>></span></p>
+        </div>
+        <div data-path="internship" class="recruit-entry part-left">
+            <p>实习生招募</p>
+            <p><span class="entry-text">入口</span><span class="entry-arrow">>></span></p>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+    $(".recruit-entry").click(function(){
+        let hashStr = window.location.hash.substring(1), 
+            htmlName = $(this).attr('data-path');
+        $('.right-content').load("./static/page/"+hashStr+"/"+htmlName+".html");
+    })
+})
+</script>

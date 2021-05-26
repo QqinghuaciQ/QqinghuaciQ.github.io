@@ -1,0 +1,24 @@
+.policy-list>li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding-left: 22px;
+    cursor: pointer;
+    position: relative;
+}
+.policy-list>li::before{
+    content: '';
+    width: 11px;
+    height: 10px;
+    background: url('../images/list_arrow.jpg') no-repeat center;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.policy-list>li>p{
+    width: 720px;
+    letter-spacing: 1px;
+}
+.policy-list>li>p:hover{color: #00b5f3;}
