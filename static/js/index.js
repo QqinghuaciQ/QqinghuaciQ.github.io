@@ -1,5 +1,4 @@
 $(function(){
-    webview.getSettings().setAllowUniversalAccessFromFileURLs(true);
 
     navActive();
     function navActive(){
